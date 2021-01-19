@@ -150,12 +150,14 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  ar resto = num % 1;
-   var entero = num - resto;
-   if (resto >= 0.5) {
-     return entero + 1;
-   } else {
-     return entero;
+  var resto = num % 1;
+  // var entero = num - resto;
+  // if (resto >= 0.5) {
+  //   return entero + 1;
+  // } else {
+  //   return entero;
+  // }
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
